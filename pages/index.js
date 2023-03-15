@@ -72,7 +72,7 @@ function App() {
               key= {id}
               id={id}
               title={pokemon["name"]}
-              text= "#" {id}
+              text= {pokemon["id"]}
               buttonText="like"
               src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`} />
           })}
