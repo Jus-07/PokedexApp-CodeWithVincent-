@@ -35,7 +35,7 @@ function Card(props) {
         <p className="card-text">{props.text}</p>
         {likes == 0 ? null : <p className="card-text">likes {likes}</p>}
         {/* Ternary operator: <condition> ? true:false, know that null means nothing */}
-        {likes == 10 ? null : (<button onClick={() => { setLikes(likes + 1) }}>Like </button>)}
+        {likes == 10 ? null : (<button className="btn btn-outline-light" onClick={() => { setLikes(likes + 1) }}>Like </button>)}
         {/* updates on its own, by changing the variable of the individual card by 1 */}
       </div>
     </div>
@@ -82,7 +82,7 @@ function App() {
           <span className="visually-hidden">Loading...</span>
         </div> : null}
         <div>
-          <button onClick={() => { setOffset(offset + limit) }} >expand</button>
+          <button className="btn btn-outline-primary btn-lg" onClick={() => { setOffset(offset + limit) }} >expand</button>
         </div>
       </div>
 
